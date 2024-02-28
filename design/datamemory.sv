@@ -18,6 +18,10 @@ module datamemory #(
   logic [31:0] Datain;
   logic [31:0] Dataout;
   logic [ 3:0] Wr;
+  logic [7:0] auxOutS0; //
+  logic [7:0] auxInS0; //
+  logic [15:0] aux2Out; //
+  logic [15:0] aux2In; //
 
   Memoria32Data mem32 (
       .raddress(raddress),
@@ -25,27 +29,48 @@ module datamemory #(
       .Clk(~clk),
       .Datain(Datain),
       .Dataout(Dataout),
+      .Dataout(Dataout),
+      .auxOutS0(auxOutS0), //
+      .auxInS0(auxInS0), //
+      .aux2In(aux2In), //
+      .aux2Out(aux2Out), //
       .Wr(Wr)
   );
 
   always_ff @(*) begin
-    raddress = {{22{1'b0}}, a[8:2], {2{1'b0}}};
-    waddress = {{22{1'b0}}, a[8:2], {2{1'b0}}};
+    raddress = {{22{1'b0}}, a}; //
+    waddress = {{22{1'b0}}, {a[8:2], {2{1'b0}}}}; //
     Datain = wd;
     Wr = 4'b0000;
 
-    if (MemRead) begin
+    f (MemRead) begin
       case (Funct3)
         3'b010:  //LW
-        rd <= Dataout;
+        rd <= $signed(Dataout);
+        3'b000: //LB
+        rd <= $signed(auxOutS0);
+        3'b100: //LBU
+        rd <= {24'b0, auxOutS0};
+        3'b001:  //LH
+        rd <= $signed(aux2Out);
+
         default: rd <= Dataout;
       endcase
     end else if (MemWrite) begin
       case (Funct3)
         3'b010: begin  //SW
           Wr <= 4'b1111;
-          Datain <= wd;
+          Datain <= $signed(wd);
         end
+        3'b000: begin // SB
+          Wr <= 4'b0100;
+          auxInS0 <= $signed(wd);
+        end
+        3'b001: begin //SH
+          Wr <= 4'b1100;
+          aux2In <= $signed(wd);
+        end
+
         default: begin
           Wr <= 4'b1111;
           Datain <= wd;
