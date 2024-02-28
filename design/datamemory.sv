@@ -43,7 +43,7 @@ module datamemory #(
     Datain = wd;
     Wr = 4'b0000;
 
-    f (MemRead) begin
+    if (MemRead) begin
       case (Funct3)
         // leitura
         3'b010:  //LW

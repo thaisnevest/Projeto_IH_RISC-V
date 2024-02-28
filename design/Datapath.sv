@@ -168,6 +168,10 @@ module Datapath #(
       B.MemWrite <= MemWrite;
       B.ALUOp <= ALUOp;
       B.Branch <= Branch;
+      B.Halt <= 0; //
+      B.Jal <= 0; //
+      B.Jalr <= 0; //
+      B.J_type <= 0; //
       B.Curr_Pc <= A.Curr_Pc;
       B.RD_One <= Reg1;
       B.RD_Two <= Reg2;
@@ -224,12 +228,16 @@ module Datapath #(
       FAmux_Result,
       SrcB,
       ALU_CC,
+      B.Jalr,
       ALUResult
   );
   BranchUnit #(9) brunit (
       B.Curr_Pc,
       B.ImmG,
       B.Branch,
+      B.Jalr,
+      B.Jal,
+      B.Halt,
       ALUResult,
       BrImm,
       Old_PC_Four,
@@ -329,12 +337,12 @@ module Datapath #(
       D.Alu_Result,
       D.MemReadData,
       D.MemtoReg,
-      Result
+      Result1
   );
 
 //
    mux2 #(32) tl_mux (
-      Result,
+      Result1,
       D.Pc_Four,
       D.J_type,
       WrmuxSrc
