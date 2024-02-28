@@ -18,10 +18,10 @@ module Datapath #(
     MemWrite,  // Register file or Immediate MUX // Memroy Writing Enable
     MemRead,  // Memroy Reading Enable
     Branch,  // Branch Enable
-    Halt, //
-    Jal, //
-    Jalr, //
-    J_type, //
+    Halt, // adicionado
+    Jal, // adicionado
+    Jalr, // adicionado
+    J_type, // adicionado
     input  logic [          1:0] ALUOp,
     input  logic [ALU_CC_W -1:0] ALU_CC,         // ALU Control Code ( input of the ALU )
     output logic [          6:0] opcode,
@@ -43,13 +43,14 @@ module Datapath #(
 );
 
   logic [PC_W-1:0] PC, PCPlus4, Next_PC;
+  logic [DATA_W-1:0] Result1, Result2; //
   logic [INS_W-1:0] Instr;
   logic [DATA_W-1:0] Reg1, Reg2;
   logic [DATA_W-1:0] ReadData;
   logic [DATA_W-1:0] SrcB, ALUResult;
-  logic [DATA_W-1:0] ExtImm, BrImm, Old_PC_Four, BrPC;
+  logic [DATA_W-1:0] ExtImm, BrImm, Old_PC_Four, BrPC, JalrPC; //
   logic [DATA_W-1:0] WrmuxSrc;
-  logic PcSel;  // mux select / flush signal
+  logic PcSel, JalJalr;  // mux select / flush signal //
   logic [1:0] FAmuxSel;
   logic [1:0] FBmuxSel;
   logic [DATA_W-1:0] FAmux_Result;
@@ -145,6 +146,10 @@ module Datapath #(
       B.MemWrite <= 0;
       B.ALUOp <= 0;
       B.Branch <= 0;
+      B.Halt <= 0; //
+      B.Jal <= 0; //
+      B.Jalr <= 0; //
+      B.J_type <= 0; //
       B.Curr_Pc <= 0;
       B.RD_One <= 0;
       B.RD_Two <= 0;
@@ -242,6 +247,9 @@ module Datapath #(
       C.MemWrite <= 0;
       C.Pc_Imm <= 0;
       C.Pc_Four <= 0;
+      C.Jal <= 0; //
+      C.Jalr <= 0; //
+      C.J_type <= 0; //
       C.Imm_Out <= 0;
       C.Alu_Result <= 0;
       C.RD_Two <= 0;
@@ -254,6 +262,9 @@ module Datapath #(
       C.MemRead <= B.MemRead;
       C.MemWrite <= B.MemWrite;
       C.Pc_Imm <= BrImm;
+      C.Jal <= B.Jal; //
+      C.Jalr <= B.Jalr; //
+      C.J_type <= B.J_type; //
       C.Pc_Four <= Old_PC_Four;
       C.Imm_Out <= B.ImmG;
       C.Alu_Result <= ALUResult;
@@ -289,6 +300,9 @@ module Datapath #(
       D.RegWrite <= 0;
       D.MemtoReg <= 0;
       D.Pc_Imm <= 0;
+      D.Jal <= 0; //
+      D.Jalr <= 0; //
+      D.J_type <= 0; //
       D.Pc_Four <= 0;
       D.Imm_Out <= 0;
       D.Alu_Result <= 0;
@@ -298,6 +312,9 @@ module Datapath #(
       D.RegWrite <= C.RegWrite;
       D.MemtoReg <= C.MemtoReg;
       D.Pc_Imm <= C.Pc_Imm;
+      D.Jal <= C.Jal; //
+      D.Jalr <= C.Jalr; //
+      D.J_type <= C.J_type; //
       D.Pc_Four <= C.Pc_Four;
       D.Imm_Out <= C.Imm_Out;
       D.Alu_Result <= C.Alu_Result;
@@ -312,8 +329,17 @@ module Datapath #(
       D.Alu_Result,
       D.MemReadData,
       D.MemtoReg,
+      Result
+  );
+
+//
+   mux2 #(32) tl_mux (
+      Result,
+      D.Pc_Four,
+      D.J_type,
       WrmuxSrc
   );
+
 
   assign WB_Data = WrmuxSrc;
 

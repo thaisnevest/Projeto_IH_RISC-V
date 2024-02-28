@@ -18,10 +18,10 @@ module datamemory #(
   logic [31:0] Datain;
   logic [31:0] Dataout;
   logic [ 3:0] Wr;
-  logic [7:0] auxOutS0; //
-  logic [7:0] auxInS0; //
-  logic [15:0] aux2Out; //
-  logic [15:0] aux2In; //
+  logic [7:0] auxOutS0; // sinal auxiliar carga de byte
+  logic [7:0] auxInS0; // sinal auxiliar armazenamento de byte
+  logic [15:0] aux2Out; // sinal auxiliar carga half-word
+  logic [15:0] aux2In; // sinal auxiliar armazenamento halfword
 
   Memoria32Data mem32 (
       .raddress(raddress),
@@ -30,21 +30,22 @@ module datamemory #(
       .Datain(Datain),
       .Dataout(Dataout),
       .Dataout(Dataout),
-      .auxOutS0(auxOutS0), //
-      .auxInS0(auxInS0), //
-      .aux2In(aux2In), //
-      .aux2Out(aux2Out), //
+      .auxOutS0(auxOutS0), // conexão
+      .auxInS0(auxInS0), // conexão
+      .aux2In(aux2In), // conexão
+      .aux2Out(aux2Out), // conexão
       .Wr(Wr)
   );
 
   always_ff @(*) begin
-    raddress = {{22{1'b0}}, a}; //
-    waddress = {{22{1'b0}}, {a[8:2], {2{1'b0}}}}; //
+    raddress = {{22{1'b0}}, a}; // ajustado
+    waddress = {{22{1'b0}}, {a[8:2], {2{1'b0}}}}; // ajustado
     Datain = wd;
     Wr = 4'b0000;
 
     f (MemRead) begin
       case (Funct3)
+        // leitura
         3'b010:  //LW
         rd <= $signed(Dataout);
         3'b000: //LB
@@ -57,6 +58,7 @@ module datamemory #(
         default: rd <= Dataout;
       endcase
     end else if (MemWrite) begin
+      //escrita
       case (Funct3)
         3'b010: begin  //SW
           Wr <= 4'b1111;
