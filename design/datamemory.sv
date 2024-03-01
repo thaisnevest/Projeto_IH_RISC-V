@@ -29,7 +29,6 @@ module datamemory #(
       .Clk(~clk),
       .Datain(Datain),
       .Dataout(Dataout),
-      .Dataout(Dataout),
       .auxOutS0(auxOutS0), // conexão
       .auxInS0(auxInS0), // conexão
       .aux2In(aux2In), // conexão
