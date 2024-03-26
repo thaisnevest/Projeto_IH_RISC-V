@@ -1,0 +1,599 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design
+vadder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1692941314
+!i10b 1
+!s100 J@Bf42a<9Q9R;nJSZl2>B2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IZeY20;HDE>zlP_Je0E=:Q3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1691264047
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/adder.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/adder.sv
+!i122 1
+Z6 L0 3 11
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1692941314.000000
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/adder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/adder.sv|
+!i113 1
+Z9 o-work work -sv
+Z10 tCvgOpt 0
+valu
+R1
+R2
+!i10b 1
+!s100 WMDJL1cQ2?3Y>8Dc9aTAN0
+R3
+ImISYUgcB4UPazfH1_R@b93
+R4
+S1
+R0
+w1692940316
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/alu.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/alu.sv
+!i122 2
+Z11 L0 3 53
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/alu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/alu.sv|
+!i113 1
+R9
+R10
+vALUController
+R1
+R2
+!i10b 1
+!s100 AGA1@lbYV@4fnl^o3N7B80
+R3
+I7NKX[;FzS<>UElIZZ5Pnj1
+R4
+S1
+R0
+w1692940483
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/ALUController.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/ALUController.sv
+!i122 3
+L0 3 42
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/ALUController.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/ALUController.sv|
+!i113 1
+R9
+R10
+n@a@l@u@controller
+vBranchUnit
+R1
+R2
+!i10b 1
+!s100 I^ADBKVSL9m4i385J5_o72
+R3
+IJa[AfHB3K8]zJ`0zH6G1g1
+R4
+S1
+R0
+w1692939243
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/BranchUnit.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/BranchUnit.sv
+!i122 4
+L0 3 28
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/BranchUnit.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/BranchUnit.sv|
+!i113 1
+R9
+R10
+n@branch@unit
+vController
+R1
+R2
+!i10b 1
+!s100 NdF3`9QQ?nW78zLA[6V`<3
+R3
+IA0ET>C<Dg]CbLQhXgh0hO0
+R4
+S1
+R0
+w1692939585
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/Controller.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/Controller.sv
+!i122 5
+L0 3 49
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/Controller.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/Controller.sv|
+!i113 1
+R9
+R10
+n@controller
+vdatamemory
+R1
+R2
+!i10b 1
+!s100 P;NNZ:fBNG51[SIaRn?lk0
+R3
+IeX4D9:^d=g6EzRzb<F9ez2
+R4
+S1
+R0
+w1692940970
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/datamemory.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/datamemory.sv
+!i122 6
+L0 3 79
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/datamemory.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/datamemory.sv|
+!i113 1
+R9
+R10
+vDatapath
+R1
+Z12 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 F=mf4hh^A<l2EYTdo>T[j0
+DXx4 work 16 Datapath_sv_unit 0 22 H7IGU[J@[Ao`59ffP@NZP1
+R2
+R4
+r1
+!s85 0
+!i10b 1
+!s100 @Y6f3XDUdhV<9aS_VXY1n1
+IjCl9bTZ91QXji1fn:1AJU2
+!s105 Datapath_sv_unit
+S1
+R0
+Z13 w1692939812
+Z14 8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/Datapath.sv
+Z15 FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/Datapath.sv
+!i122 7
+L0 5 349
+R7
+31
+R8
+Z16 !s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/Datapath.sv|
+Z17 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/Datapath.sv|
+!i113 1
+R9
+R10
+n@datapath
+XDatapath_sv_unit
+R1
+R12
+R2
+VH7IGU[J@[Ao`59ffP@NZP1
+r1
+!s85 0
+!i10b 1
+!s100 oAM6B@6d66[I;XkEfe1i<2
+IH7IGU[J@[Ao`59ffP@NZP1
+!i103 1
+S1
+R0
+R13
+R14
+R15
+!i122 7
+L0 3 0
+R7
+31
+R8
+R16
+R17
+!i113 1
+R9
+R10
+n@datapath_sv_unit
+vflopr
+R1
+Z18 !s110 1692941315
+!i10b 1
+!s100 ElcDNl85mGL9dF?Xd3Za63
+R3
+I1dg44[G93Fgzg=m?ij>B80
+R4
+S1
+R0
+R5
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/flopr.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/flopr.sv
+!i122 8
+L0 3 16
+R7
+r1
+!s85 0
+31
+Z19 !s108 1692941315.000000
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/flopr.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/flopr.sv|
+!i113 1
+R9
+R10
+vForwardingUnit
+R1
+R18
+!i10b 1
+!s100 CEcEo:_iR9UO6Xd4H`cAC3
+R3
+IaQ81UizzJ;f0ojBL^:P`81
+R4
+S1
+R0
+R5
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/ForwardingUnit.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/ForwardingUnit.sv
+!i122 9
+L0 3 18
+R7
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/ForwardingUnit.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/ForwardingUnit.sv|
+!i113 1
+R9
+R10
+n@forwarding@unit
+vHazardDetection
+R1
+R18
+!i10b 1
+!s100 =:@:A`@P^b2GYnY^68bZa2
+R3
+IH4RA7[>>Pc5jj4LEC[J]c3
+R4
+S1
+R0
+R5
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/HazardDetection.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/HazardDetection.sv
+!i122 10
+R6
+R7
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/HazardDetection.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/HazardDetection.sv|
+!i113 1
+R9
+R10
+n@hazard@detection
+vimm_Gen
+R1
+R18
+!i10b 1
+!s100 zPifKmQDe?2_bikF_Eo6c2
+R3
+IZDge_1B64X[az1FQBXjLM3
+R4
+S1
+R0
+w1692922145
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/imm_Gen.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/imm_Gen.sv
+!i122 11
+R11
+R7
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/imm_Gen.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/imm_Gen.sv|
+!i113 1
+R9
+R10
+nimm_@gen
+vinstructionmemory
+R1
+R18
+!i10b 1
+!s100 6>jnlWCg62QiF^iRiX?C81
+R3
+IQ^1XZX]QZ>S8MOOBCZO=g3
+R4
+S1
+R0
+R5
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/instructionmemory.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/instructionmemory.sv
+!i122 12
+L0 4 23
+R7
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/instructionmemory.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/instructionmemory.sv|
+!i113 1
+R9
+R10
+vMemoria32
+R1
+R18
+!i10b 1
+!s100 1FjL2lU>nY@FN7_?gRN8Y3
+R3
+IAX82F@lFAa_I5<N3gE;5D1
+R4
+S1
+R0
+R5
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/Memoria32.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/Memoria32.sv
+!i122 13
+L0 26 94
+R7
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/Memoria32.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/Memoria32.sv|
+!i113 1
+R9
+R10
+n@memoria32
+vMemoria32Data
+R1
+R18
+!i10b 1
+!s100 n5c?5<f2Kb<3?al]MehEG0
+R3
+ICZ2Aj=ZohoWYl1ClYA=Uc2
+R4
+S1
+R0
+w1692565896
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/Memoria32Data.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/Memoria32Data.sv
+!i122 14
+L0 26 102
+R7
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/Memoria32Data.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/Memoria32Data.sv|
+!i113 1
+R9
+R10
+n@memoria32@data
+vmux2
+R1
+R18
+!i10b 1
+!s100 9Hgm:_HaC7CH^93]dTO>S3
+R3
+IG4RaOe2`G4lUBan[G2:V:3
+R4
+S1
+R0
+w1691264046
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/mux2.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/mux2.sv
+!i122 15
+L0 3 12
+R7
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/mux2.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/mux2.sv|
+!i113 1
+R9
+R10
+vmux4
+R1
+R18
+!i10b 1
+!s100 PkRNb1:FWO8e2Pa@XbPjl1
+R3
+I9d<fzode^@]in4k?Y_8Xa3
+R4
+S1
+R0
+R5
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/mux4.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/mux4.sv
+!i122 16
+L0 3 14
+R7
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/mux4.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/mux4.sv|
+!i113 1
+R9
+R10
+XPipe_Buf_Reg_PKG
+R1
+Z20 !s110 1692941316
+!i10b 1
+!s100 J[Ca4GB_AnXKnclo=`7ed2
+R3
+I;^gLA3XbaUmZ2cGc6IT>f2
+V;^gLA3XbaUmZ2cGc6IT>f2
+S1
+R0
+w1692939694
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/RegPack.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/RegPack.sv
+!i122 20
+L0 1 0
+R7
+r1
+!s85 0
+31
+Z21 !s108 1692941316.000000
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/RegPack.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/RegPack.sv|
+!i113 1
+R9
+R10
+n@pipe_@buf_@reg_@p@k@g
+vramOnChip32
+R20
+!i10b 1
+!s100 ANVMcJ>zoMilMS0;3XPLA0
+R3
+I^;DRJDTliC6=<VYHgfUPK2
+R4
+R0
+R5
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/ramOnChip32.v
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/ramOnChip32.v
+!i122 17
+Z22 L0 40 78
+R7
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/ramOnChip32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/ramOnChip32.v|
+!i113 1
+Z23 o-work work
+R10
+nram@on@chip32
+vramOnChipData
+R20
+!i10b 1
+!s100 _gV6BH4AzTX?eTUV22eHj0
+R3
+I?;<bQMMFfKij_76:8Fz9E3
+R4
+R0
+R5
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/ramOnChipData.v
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/ramOnChipData.v
+!i122 18
+R22
+R7
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/ramOnChipData.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/ramOnChipData.v|
+!i113 1
+R23
+R10
+nram@on@chip@data
+vRegFile
+R1
+R20
+!i10b 1
+!s100 :?B`7Zn]Gb5m`Z5KL_^>03
+R3
+Inh:[Ub3]OBnndLN2C[c513
+R4
+S1
+R0
+R5
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/RegFile.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/RegFile.sv
+!i122 19
+L0 3 35
+R7
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/RegFile.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/RegFile.sv|
+!i113 1
+R9
+R10
+n@reg@file
+vriscv
+R1
+R20
+!i10b 1
+!s100 jKge?RSCWg?<IWUn=N`TL0
+R3
+IgL_J<4XGL0k`4_7;4c4kz1
+R4
+S1
+R0
+w1692939839
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/RISC_V.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/RISC_V.sv
+!i122 21
+L0 3 80
+R7
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/RISC_V.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/RISC_V.sv|
+!i113 1
+R9
+R10
+vtb_top
+R1
+R20
+!i10b 1
+!s100 <k4lG_MkNX?2l=l78L8cm0
+R3
+I>k=`<H>Iz<mGeT[i?:TZT3
+R4
+S1
+R0
+w1691264021
+8C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/tb_top.sv
+FC:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/tb_top.sv
+!i122 22
+L0 3 62
+R7
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/tb_top.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/menez/Documents/PROJETO_IH/Projeto_IH_RISC-V/design/tb_top.sv|
+!i113 1
+R9
+R10
